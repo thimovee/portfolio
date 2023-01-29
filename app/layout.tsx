@@ -14,12 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="bg-[#23252F] text-white font-[Inter]">
-        <div className={inter.className}>
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+      <body className={`${inter.className} bg-[#23252F] text-white`}>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   )

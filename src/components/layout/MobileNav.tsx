@@ -7,8 +7,8 @@ import AnimateOnView from "../AnimateOnView";
 import Link from "next/link";
 
 const MobileNav = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const pathname = usePathname()
+    const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         if (isOpen) {
@@ -16,7 +16,7 @@ const MobileNav = () => {
         } else {
             document.body.classList.remove('stop-scroll');
         }
-    }, [isOpen])
+    }, [isOpen]);
 
     return (
         <div className="flex md:hidden">
@@ -25,37 +25,33 @@ const MobileNav = () => {
             </button>
 
             {isOpen && (
-                <div className='fixed inset-0 z-50 flex justify-center items-center'>
-                    <div className='w-full h-full flex flex-col gap-5 '>
-                        <ul className='flex flex-col gap-10 bg-black backdrop-blur-xl min-h-screen py-32 px-5 z-50 w-full'>
+                <div className='fixed inset-0 z-[90] flex justify-center items-center'>
+                    <div className='w-full h-full flex flex-col gap-5'>
+                        <ul className='flex flex-col gap-10 bg-black backdrop-blur-xl min-h-screen py-32 px-5 z-[100] w-full'>
                             <AnimateOnView delay={0.10}>
-                                <Link href="/">
-                                    <li className={cn('font-semibold border-b pb-6',
-                                        pathname === '/' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
+                                <Link onClick={() => setIsOpen(false)} href="/">
+                                    <li className={cn('font-semibold border-b pb-6', pathname === '/' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
                                         Home
                                     </li>
                                 </Link>
                             </AnimateOnView>
-                            <Link href="/portfolio">
+                            <Link onClick={() => setIsOpen(false)} href="/portfolio">
                                 <AnimateOnView delay={0.20}>
-                                    <li className={cn('font-semibold border-b pb-6',
-                                        pathname === '/portfolio' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
+                                    <li className={cn('font-semibold border-b pb-6', pathname === '/portfolio' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
                                         Portfolio
                                     </li>
                                 </AnimateOnView>
                             </Link>
-                            <Link href="/over-mezelf">
+                            <Link onClick={() => setIsOpen(false)} href="/over-mezelf">
                                 <AnimateOnView delay={0.30}>
-                                    <li className={cn('font-semibold border-b pb-6',
-                                        pathname === '/over-mezelf' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
+                                    <li className={cn('font-semibold border-b pb-6', pathname === '/over-mezelf' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
                                         Over mezelf
                                     </li>
                                 </AnimateOnView>
                             </Link>
-                            <Link href="/blog">
+                            <Link onClick={() => setIsOpen(false)} href="/blog">
                                 <AnimateOnView delay={0.40}>
-                                    <li className={cn('font-semibold border-b pb-6',
-                                        pathname === '/blog' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
+                                    <li className={cn('font-semibold border-b pb-6', pathname === '/blog' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
                                         Blog
                                     </li>
                                 </AnimateOnView>
@@ -65,7 +61,8 @@ const MobileNav = () => {
                 </div>
             )}
         </div>
-    )
-}
+    );
+};
+
 
 export default MobileNav;

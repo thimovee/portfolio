@@ -18,7 +18,7 @@ const Header = () => {
     const path = usePathname();
 
     return (
-        <header className='relative backdrop-blur-md bg-[#00000099] !box-border flex justify-between items-center px-5 medium:p-2.5 py-2.5 shadow-[0px_1px_0px_0px_#ffffff26] medium:shadow-[0px_0px_0px_1px_#ffffff26] medium:rounded-[20px] border-border medium:m-5 medium:my-5 large:mx-[50px] xlarge:min-w-[1380px] xlarge:max-w-[1380px] xlarge:p-2.5 xlarge:mx-auto'>
+        <header className='relative z-[999999] backdrop-blur-md bg-[#00000099] !box-border flex justify-between items-center px-5 medium:p-2.5 py-2.5 shadow-[0px_1px_0px_0px_#ffffff26] medium:shadow-[0px_0px_0px_1px_#ffffff26] medium:rounded-[20px] border-border medium:m-5 medium:my-5 large:mx-[50px] xlarge:min-w-[1380px] xlarge:max-w-[1380px] xlarge:p-2.5 xlarge:mx-auto'>
             <div className='flex gap-2.5 z-[999999]'>
                 <Link href="/" className='active:scale-90 duration-300 relative w-7.5 medium:w-10 h-7.5 medium:h-10'>
                     <Image fill className='rounded-lg object-cover' src='/logo.png' alt='Logo' />

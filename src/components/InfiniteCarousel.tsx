@@ -62,14 +62,14 @@ const InfiniteCarousel: FC<InfiniteCarouselProps> = ({ icons, hasBackground, del
     }, [inView]);
 
     return (
-        <div className={cn("h-[115px]  rounded-xl w-full", hasBackground ? "bg-[#101010]" : "")} ref={ref}>
+        <div className={cn("h-[115px] rounded-xl w-full", hasBackground ? "bg-[#101010]" : "")} ref={ref}>
             <motion.div
-                className="absolute left-0  rounded-[20px] pt-[30px] pb-[50px] flex gap-[100px]"
+                className="absolute left-0 rounded-[20px] pt-[30px] pb-[50px] flex gap-[100px]"
                 ref={measureRef}
                 style={{ x: xTranslate }}
             >
                 {[...icons, ...icons].map((icon, index) => (
-                    <div key={index} className='group border border-neutral-900 relative h-[40px]  bg-[#090909] p-1.5 rounded-md aspect-square flex items-center justify-center'>
+                    <div key={index} className='group border border-neutral-900 relative h-[40px] w-[40px] bg-[#090909] p-1.5 rounded-md flex items-center justify-center'>
                         {icon.icon}
                         <span className="opacity-0 duration-300 group-hover:opacity-100 group-hover:-bottom-5 -bottom-8 absolute capitalize text-secondary text-xs">{icon.name}</span>
                     </div>

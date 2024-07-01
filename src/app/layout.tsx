@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} >
         <Header />
-        <main>
+        <main className="relative z-10">
           {children}
           <Toaster />
         </main>

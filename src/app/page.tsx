@@ -14,13 +14,12 @@ export default function Home() {
   return (
     <div className='pt-12  medium:pt-[68px] large:pt-[86px] px-5 medium:px-7.5 large:px-[60px] xlarge:px-0 xlarge:max-w-8xl xlarge:mx-auto w-full mx-auto large:mx-0 flex flex-col justify-center'>
       <div className=' text-center items-center w-full tracking-tight flex flex-col xlarge:w-full gap-12 medium:gap-[30px]'>
-        <AnimateOnView>
+        <AnimateOnView className="relative z-[1]">
           <span className="relative  max-w-fit text-sm leading-6 large:text-[15px] large:leading-[25px]">
-            <div className="bg-black border-[#ffffff26] rounded-full border flex gap-2.5 py-0.5 px-3 items-center z-[99999999999]">
-              <span aria-hidden="true" className="animate-pulse duration-75 z-20 w-2.5 h-2.5 bg-[#a866ff] rounded-full"></span>
-              <p className="tracking-tight z-20 ">Beschikbaar voor werk</p>
+            <div className="bg-black border-[#ffffff26] rounded-full border flex gap-2.5 py-0.5 px-3 items-center">
+              <span aria-hidden="true" className="animate-pulse duration-75  w-2.5 h-2.5 bg-[#a866ff] rounded-full"></span>
+              <p className="tracking-tight  ">Beschikbaar voor werk</p>
             </div>
-            <div className="absolute -inset-1 rounded-md blur-xl bg-gradient-to-br from-indigo-500/25 via-indigo-800/25 to-violet-600/25 -z-10" />
           </span>
         </AnimateOnView>
         <AnimateOnView delay={0.10}>

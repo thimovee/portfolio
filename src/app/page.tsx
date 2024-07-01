@@ -29,15 +29,15 @@ export default function Home() {
           </h1>
         </AnimateOnView>
         <AnimateOnView delay={0.20}>
-          <p className="text-secondary max-w-[900px] text-base medium:text-[17px] font-medium">
+          <p className="text-secondary max-w-[900px] text-base  font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </AnimateOnView>
         <AnimateOnView delay={0.30} className="flex gap-4 items-center">
-          <Link className="bg-purple block text-center w-full medium:w-fit medium:mx-auto  font-medium text-[17px] tracking-tight leading-none py-3 px-5 rounded-lg" href="/contact">
+          <Link className="bg-purple block text-center w-full medium:w-fit medium:mx-auto  font-medium text-base tracking-tight leading-none py-3 px-5 rounded-lg" href="/contact">
             Contacteer mij
           </Link>
-          <Link className="border  border-border block text-center w-full medium:w-fit medium:mx-auto  font-medium text-[17px] tracking-tight leading-none py-3 px-5 rounded-lg" href="/portfolio">
+          <Link className="border  border-border block text-center w-full medium:w-fit medium:mx-auto  font-medium text-base tracking-tight leading-none py-3 px-5 rounded-lg" href="/portfolio">
             Bekijk mijn werk
           </Link>
         </AnimateOnView>
@@ -57,7 +57,7 @@ export default function Home() {
             ))}
           </div>
           <AnimateOnView variant="fadeIn">
-            <Link className="bg-white medium:bg-[#ffffff12] mt-12 block text-center w-full medium:w-fit medium:mx-auto  font-semibold text-[17px] tracking-tight leading-none py-3 px-5 rounded-full" href="/portfolio">
+            <Link className="bg-white medium:bg-[#ffffff12] mt-12 block text-center w-full medium:w-fit medium:mx-auto  font-semibold text-base tracking-tight leading-none py-3 px-5 rounded-full" href="/portfolio">
               <span className="text-[#7218e5] medium:text-transparent medium:bg-gradient-to-l medium:from-gradient-start medium:to-gradient-end medium:bg-clip-text ">Bekijk alle projecten</span>
             </Link>
           </AnimateOnView>

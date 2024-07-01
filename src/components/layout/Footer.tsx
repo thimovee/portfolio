@@ -13,7 +13,7 @@ const Footer = () => {
                 <h5 className='max-w-[600px]  text-center text-4xl large:text-5xl font-semibold'>
                     Een vraag of een project?
                 </h5>
-                <p className='max-w-[600px]  text-center text-sm large:text-[17px] leading-[27px] text-secondary mt-[30px] large:mt-6 mb-12 large:mb-14'>
+                <p className='max-w-[600px]  text-center text-sm large:base leading-[27px] text-secondary mt-[30px] large:mt-6 mb-12 large:mb-14'>
                     Ik ben altijd op zoek naar nieuwe uitdagingen en projecten. Neem contact met me op en ik zal zo snel mogelijk reageren.
                 </p>
                 <Link className='bg-black text-white px-12 py-6 tracking-tighter font-semibold text-[32px] leading-[42px] medium:text-5xl large:text-[64px] large:leading-[74px] leading rounded-full' href='/contact'>Contact</Link>

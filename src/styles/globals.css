@@ -37,10 +37,6 @@ html {
   box-shadow: rgba(0, 0, 0, 0.016) 0px 0.602187px 1.56569px 0px, rgba(0, 0, 0, 0.06) 0px 2.28853px 5.95019px 0px, rgba(0, 0, 0, 0.25) 0px 10px 26px 0px;
 }
 
-/* Example usage for a bigger button */
-
-
-
 .animated-border-box,
 .animated-border-box-glow {
   --button-height: 42px;
@@ -97,4 +93,11 @@ html {
   100% {
     transform: translate(-50%, -50%) rotate(1turn);
   }
+}
+
+.stop-scroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }

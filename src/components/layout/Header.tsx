@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import slugify from 'slugify'
+import MobileNav from './MobileNav'
 
 const Header = () => {
     const links = [
@@ -17,8 +18,8 @@ const Header = () => {
     const path = usePathname();
 
     return (
-        <header className='backdrop-blur-md bg-[#00000099] !box-border flex justify-between items-center px-5 medium:p-2.5 py-2.5 shadow-[0px_1px_0px_0px_#ffffff26] medium:shadow-[0px_0px_0px_1px_#ffffff26] medium:rounded-[20px] border-border medium:m-5 medium:my-5 large:mx-[50px] xlarge:min-w-[1380px] xlarge:max-w-[1380px] xlarge:p-2.5 xlarge:mx-auto'>
-            <div className='flex gap-2.5'>
+        <header className='relative backdrop-blur-md bg-[#00000099] !box-border flex justify-between items-center px-5 medium:p-2.5 py-2.5 shadow-[0px_1px_0px_0px_#ffffff26] medium:shadow-[0px_0px_0px_1px_#ffffff26] medium:rounded-[20px] border-border medium:m-5 medium:my-5 large:mx-[50px] xlarge:min-w-[1380px] xlarge:max-w-[1380px] xlarge:p-2.5 xlarge:mx-auto'>
+            <div className='flex gap-2.5 z-[999999]'>
                 <Link href="/" className='active:scale-90 duration-300 relative w-7.5 medium:w-10 h-7.5 medium:h-10'>
                     <Image fill className='rounded-lg object-cover' src='/logo.png' alt='Logo' />
                 </Link>
@@ -27,12 +28,7 @@ const Header = () => {
                     <p className='text-secondary'>Web Developer</p>
                 </div>
             </div>
-            <div className='flex gap-2 medium:hidden px-2.5 py-3.5'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="white">
-                    <rect width="20" height="2" fill="white" />
-                    <rect y="10" width="20" height="2" fill="white" />
-                </svg>
-            </div>
+            <MobileNav />
             <ul className='tracking-tight capitalize hidden medium:flex gap-5 font-medium text-sm leading-6 medium:text-base medium:leading-6 text-secondary'>
                 {links.map((link, i) => (
                     <li className='active:scale-95 hover:scale-105 hover:text-white duration-200' key={i}>
@@ -46,7 +42,7 @@ const Header = () => {
                     </Link>
                 </div>
             </ul>
-        </header >
+        </header>
     )
 }
 

@@ -17,7 +17,7 @@ const Page = () => {
                 </AnimateOnView>
                 <div className='flex flex-col max-w-[780px]'>
                     <AnimateOnView delay={0.10}>
-                        <p className='mt-6 mb-24 text-secondary font-medium text-[17px]'>
+                        <p className='mt-6 mb-24 text-secondary font-medium'>
                             Ik ben benieuwd naar jouw project en hoe ik kan helpen. Deel gerust je projectgegevens via het formulier hieronder. Voor e-mail, contacteer me op
                             <br /><a href='mailto:thimove@gmail.com' className="text-white hover:text-secondary_purple duration-500 ease-linear"> thimove@gmail.com</a>
                         </p>

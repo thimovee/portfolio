@@ -1,4 +1,5 @@
 "use client"
+import { sendEmail } from "@/app/_actions/email";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { FC, useRef } from "react"
 

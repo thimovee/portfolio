@@ -22,7 +22,7 @@ const config: Config = {
       },
       colors: {
         background: "hsl(var(--background))",
-        purple: "hsl(var(--purple))",
+        purple: "#7118e5",
         primary: "hsl(var(--primary))",
         secondary: "rgba(255,255,255,0.5)",
         border: "rgba(255, 255, 255, .15)",
@@ -66,7 +66,7 @@ const config: Config = {
       }
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, require("@tailwindcss/typography"),],
 };
 export default config;
 

@@ -1,17 +1,26 @@
 type Project = {
     title: string,
     thumbnailUrl: string,
-    role: string,
-    date: string,
-    duration: string,
-    providedServices: string[],
-    problem: string,
-    solution: string,
+    description: string,
     images: string[],
     slug: string,
     githubUrl: string,
     websiteUrl: string,
     technologies: string[],
+}
+
+type BlogPost = {
+    id: string,
+    title: string,
+    intro: string,
+    thumbnail: string,
+    date: string,
+    postAuthor: string,
+}
+
+type Author = {
+    name: string,
+    avatar: string,
 }
 
 type Expertise = {

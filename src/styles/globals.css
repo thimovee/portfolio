@@ -21,7 +21,7 @@ html {
     --background: 0, 0%, 0%;
     --primary: 0, 0%, 100%;
     --secondary: #ffffff80;
-    --purple: 266, 81%, 49.6%;
+    --purple: #7118e5;
     --secondary_purple: rgb(203, 163, 255);
   }
 }
@@ -37,25 +37,29 @@ html {
   box-shadow: rgba(0, 0, 0, 0.016) 0px 0.602187px 1.56569px 0px, rgba(0, 0, 0, 0.06) 0px 2.28853px 5.95019px 0px, rgba(0, 0, 0, 0.25) 0px 10px 26px 0px;
 }
 
-/*// Glow Border Animation //*/
+/* Example usage for a bigger button */
+
+
 
 .animated-border-box,
 .animated-border-box-glow {
-  max-height: 42px;
-  min-height: 42px;
-  max-width: 87px;
+  --button-height: 42px;
+  --button-width: 87px;
+  --border-radius: 10px;
+
+  max-height: var(--button-height);
+  min-height: var(--button-height);
+  max-width: var(--button-width);
   height: 100%;
   width: 100%;
   position: absolute;
   overflow: hidden;
   z-index: 0;
-  /* Border Radius */
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 .animated-border-box-glow {
   overflow: hidden;
-  /* Glow Blur */
   filter: blur(20px);
 }
 
@@ -76,20 +80,17 @@ html {
   animation: rotate 3s linear infinite;
 }
 
-
 .animated-border-box:after {
   content: '';
   position: absolute;
   z-index: -1;
-  /* border width */
   left: 2px;
   top: 2px;
-  /* double the px from the border width left */
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  /*bg color*/
   background: black;
   border-radius: 8px;
+  /* Adjust border radius */
 }
 
 @keyframes rotate {

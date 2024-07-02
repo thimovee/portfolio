@@ -8,7 +8,7 @@ interface BlogPostsProps {
 
 const BlogPosts: FC<BlogPostsProps> = ({ posts, amount }) => {
     return (
-        <section className="text-white animate-fade-right grid grid-cols-1 medium:grid-cols-2 large:grid-cols-3 gap-4">
+        <section className="text-white animate-fade-right grid grid-cols-1 md:grid-cols-2 large:grid-cols-3 gap-4">
             {posts.length > 0 ? posts.slice(0, amount).map((post) => (
                 <BlogCard key={post.id} post={post} />
             )) : (

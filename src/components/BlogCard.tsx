@@ -13,7 +13,7 @@ const BlogCard: FC<BlogCardProps> = ({ post }) => {
     return (
         <Link key={post.id} href={`/blog/${post.id}`}>
             <article className="p-6 group justify-start relative border border-border rounded-[20px] group active:scale-95  w-full flex flex-col transition duration-300 ease-in-out border-neutral-800">
-                <div className="relative h-80 medium:h-72 large:h-56">
+                <div className="relative w-full h-48 sm:h-64 lg:h-64  overflow-hidden rounded-[10px] border border-border">
                     <Image src={`/images/${post.thumbnail}`} alt={post.title} fill className="group-hover:scale-105 duration-300 object-cover rounded-[10px] border border-border" />
                 </div>
                 <h3 className="text-left mt-6 mb-4 line-clamp-2 text-white/90 text-xl">{post.title}</h3>

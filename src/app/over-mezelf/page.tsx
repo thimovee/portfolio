@@ -1,6 +1,9 @@
 import React, { FC } from 'react'
 import AnimatedWhenVisible from '@/components/AnimateOnView'
 import { icons } from "@/components/ui/Icons";
+import Image from 'next/image';
+import Education from '@/components/Education';
+import Services from '@/components/Services';
 
 const page: FC = () => {
     return (
@@ -17,36 +20,27 @@ const page: FC = () => {
                     </AnimatedWhenVisible>
                     <AnimatedWhenVisible className="w-full text-left large:max-w-[60%]" delay={0.2}>
                         <p className='font-medium text-secondary text-base  '>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-                            <br /><br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.<br />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                            Ik ben Thimo van Ewijk, 19 jaar oud en ik woon in Tiel. Mijn passie voor programmeren begon in 2020 toen ik op het mbo bij ROC Nijmegen begon. Ik heb drie jaar op deze school gezeten en koos voor het versnelde traject, wat me in staat stelde mijn studie sneller af te ronden. Dit jaar ben ik verder gegaan met de hbo-opleiding HAN ICT, waar ik vol enthousiasme aan begonnen ben.<br /><br />Naast mijn studie ben ik altijd op zoek naar nieuwe uitdagingen en mogelijkheden om mijn kennis en vaardigheden uit te breiden. In mijn vrije tijd ben ik graag bezig met het ontwikkelen van mijn eigen projecten, van kleine applicaties tot het verkennen van nieuwe programmeertalen. Buiten de wereld van programmeren geniet ik van verschillende hobby&apos;s. Ik kijk vaak films, fiets en fitness, en ook game ik soms wel eens online met wat vrienden.
                         </p>
                     </AnimatedWhenVisible>
                 </div>
                 <AnimatedWhenVisible variant="fadeInFromBottom" className='bg-[#101010] items-center rounded-[20px] my-16 px-9 py-5 gap-12 flex flex-col medium:flex-row medium:gap-0 medium:justify-between '>
                     <AnimatedWhenVisible variant="fadeInToRight" className='max-w-fit flex flex-col items-center'>
-                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>10+</h4>
+                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>4+</h4>
                         <p className='leading-7 text-base text-secondary font-medium tracking-[-0.5px]'>
-                            Years of Experience
-                        </p>
-                    </AnimatedWhenVisible>
-                    <AnimatedWhenVisible delay={0.10} variant="fadeInToRight" className='max-w-fit flex flex-col items-center'>
-                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>72+</h4>
-                        <p className='leading-7 text-base  text-secondary font-medium tracking-[-0.5px]'>
-                            Projects completed
+                            Jaar Ervaring
                         </p>
                     </AnimatedWhenVisible>
                     <AnimatedWhenVisible delay={0.20} variant="fadeInToRight" className='max-w-fit flex flex-col items-center'>
-                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>95%</h4>
+                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>20+</h4>
                         <p className='leading-7 text-base  text-secondary font-medium tracking-[-0.5px]'>
-                            Client satisfction
+                            Persoonlijke Projecten
                         </p>
                     </AnimatedWhenVisible>
                     <AnimatedWhenVisible delay={0.30} variant="fadeInToRight" className='max-w-fit flex flex-col items-center'>
-                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>15</h4>
+                        <h4 className='bg-gradient-to-t from-gradient-start to-gradient-end inline-block text-transparent bg-clip-text font-bold text-5xl leading-[60px] medium:text-4xl medium:leading-[60px] large:leading-[60px] large:text-5xl tracking-tight'>8</h4>
                         <p className='leading-7 text-base  text-secondary font-medium tracking-[-0.5px]'>
-                            Design awards
+                            Beheerste Programmeertalen
                         </p>
                     </AnimatedWhenVisible>
                 </AnimatedWhenVisible>
@@ -55,66 +49,36 @@ const page: FC = () => {
                         <h5 className='text-[32px] mb-8 leading-[42px] tracking-[-1.5px] medium:text-[38px] medium:leading-[48px] large:text-5xl large:leading-[58px] text-left font-semibold'>Ervaring</h5>
                     </AnimatedWhenVisible>
                     <AnimatedWhenVisible className='flex flex-col medium:flex-row medium:justify-between text-secondary'>
-                        <div className='mb-6 text-base  large:leading-7'>2020 - Present</div>
+                        <div className='mb-6 text-base  large:leading-7'>feb. 2023 - jun. 2023</div>
                         <div className='flex flex-col medium:w-3/5'>
-                            <h6 className='text-white font-semibold text-xl leading-[30px] medium:text-[21px] medium:leading-[31px]'>Self-employed</h6>
-                            <div className='leading-7 mt-1 mb-8'>Freelance Designer</div>
+                            <h6 className='text-white font-semibold text-xl leading-[30px] medium:text-[21px] medium:leading-[31px]'>
+                                IDsignage
+                            </h6>
+                            <div className='leading-7 mt-1 mb-8'>Software Developer</div>
                             <p className='text-base  large:leading-7'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Bij IDsigange heb ik mijn afstudeerstage gelopen als Software Developer. Hier heb ik gewerkt aan het ontwikkelen van een fullstack ecommerce platform voor het verkopen van digital signage templates. Ik heb hier veel ervaring opgedaan met het werken in een professionele omgeving en heb mijn vaardigheden verder kunnen ontwikkelen.
                             </p>
                         </div>
                     </AnimatedWhenVisible>
                 </div>
                 <AnimatedWhenVisible aria-hidden='true' className='bg-[#ffffff26] w-full h-px my-8'> </AnimatedWhenVisible>
                 <AnimatedWhenVisible className='text-left flex flex-col medium:flex-row medium:justify-between text-secondary'>
-                    <div className='mb-6 text-base  large:leading-7'>2020 - Present</div>
+                    <div className='mb-6 text-base  large:leading-7'>aug. 2021 - feb. 2022</div>
                     <div className='flex flex-col medium:w-3/5'>
-                        <h6 className='text-white font-semibold text-xl leading-[30px] medium:text-[21px] medium:leading-[31px]'>Self-employed</h6>
-                        <div className='leading-7 mt-1 mb-8'>Freelance Designer</div>
+                        <h6 className='text-white font-semibold text-xl leading-[30px] medium:text-[21px] medium:leading-[31px]'>Ziekenhuis Rivierenland</h6>
+                        <div className='leading-7 mt-1 mb-8'>Sharepoint Beheerder</div>
                         <p className='text-base  large:leading-7'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Tijdens mijn stage bij Ziekenhuis Rivierenland heb ik als SharePoint Beheerder gewerkt. In deze rol was ik verantwoordelijk voor het beheren en onderhouden van de SharePoint-omgeving van het ziekenhuis. Deze ervaring heeft me waardevolle inzichten gegeven in het werken binnen een groot team, het continu verwerken van feedback, en het effectief omgaan met SharePoint.
                         </p>
                     </div>
                 </AnimatedWhenVisible>
-                <AnimatedWhenVisible aria-hidden='true' className='bg-[#ffffff26] w-full h-px my-8'> </AnimatedWhenVisible>
-                <AnimatedWhenVisible className='text-left'>
-                    <div className='flex flex-col medium:flex-row medium:justify-between text-secondary'>
-                        <div className='mb-6 text-base  large:leading-7'>2020 - Present</div>
-                        <div className='flex flex-col medium:w-3/5'>
-                            <h6 className='text-white font-semibold text-xl leading-[30px] medium:text-[21px] medium:leading-[31px]'>Self-employed</h6>
-                            <div className='leading-7 mt-1 mb-8'>Freelance Designer</div>
-                            <p className='text-base  large:leading-7'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </AnimatedWhenVisible>
-                <div className='pt-24 flex flex-col gap-12 large:gap-14'>
-                    <AnimatedWhenVisible>
-                        <h5 className='text-[32px] leading-[42px] tracking-[-1.5px] medium:text-[38px] medium:leading-[48px] large:text-5xl large:leading-[58px] text-left font-semibold'>Services</h5>
-                    </AnimatedWhenVisible>
-                    <div className='grid grid-cols-1 gap-4 medium:gap-5 large:grid-cols-3 font-semibold text-secondary text-xl medium:text-[22px] medium:leading-8'>
-                        <AnimatedWhenVisible className='bg-[#101010] p-5 medium:p-[30px] rounded-[20px] flex gap-5 medium:gap-8'>
-                            <span>01</span>
-                            <span>Web Development</span>
-                        </AnimatedWhenVisible>
-                        <AnimatedWhenVisible delay={0.10} className='bg-[#101010] p-5 medium:p-[30px] rounded-[20px] flex gap-5 medium:gap-8'>
-                            <span>02</span>
-                            <span>
-                                Web Design
-                            </span>
-                        </AnimatedWhenVisible>
-                        <AnimatedWhenVisible delay={0.20} className='bg-[#101010] p-5 medium:p-[30px] rounded-[20px] flex gap-5 medium:gap-8'>
-                            <span>03</span>
-                            <span>E-commerce</span>
-                        </AnimatedWhenVisible>
-                    </div>
-                </div>
+                <Education />
+                <Services />
                 <div className='relative  pt-24 flex flex-col gap-12 large:gap-14'>
                     <AnimatedWhenVisible>
                         <h5 className='text-[32px] leading-[42px] tracking-[-1.5px] medium:text-[38px] medium:leading-[48px] large:text-5xl large:leading-[58px] text-left font-semibold'>Technologieën</h5>
                         <p className='text-left my-8 text-secondary text-base '>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            In de loop van mijn studie en persoonlijke projecten heb ik een breed scala aan technologieën en programmeertalen geleerd en toegepast. Mijn focus ligt voornamelijk op het ontwikkelen van webapplicaties, waar ik zowel frontend als backend vaardigheden heb kunnen ontwikkelen. Hier is een overzicht van de technologieën waar ik mee heb gewerkt:
                         </p>
                         <div className='flex flex-wrap gap-2'>
                             {icons.map((icon, index) => (

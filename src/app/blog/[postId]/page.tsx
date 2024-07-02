@@ -32,7 +32,6 @@ export function generateMetadata({ params }: { params: { postId: string } }) {
             description: post.intro,
             publishedTime: post.date,
             type: "article",
-            // url: absoluteUrl(`/blog/${post.slug}`),
             images: [
                 {
                     url: post.thumbnail,
@@ -143,11 +142,15 @@ export default async function Post({ params }: { params: { postId: string } }) {
                         </AnimateOnView>
                     </>
                 )}
-                <AnimateOnView className='mx-auto'>
-                    <Link className='bg-neutral-900/75 px-6 py-3 max-w-fit rounded-full' href="/blog">
-                        Bekijk alles
+                {allPostsExceptCurrent.length === 0 ? (
+                    <Link href="/blog" className='text-primary mx-auto text-xl font-medium text-center flex gap-2 items-center'>
+                        <ChevronLeft className="w-6 h-6" />Terug naar blog
                     </Link>
-                </AnimateOnView>
+                ) : (
+                    <Link href="/blog" className='text-primary text-2xl font-medium text-center'>
+                        Bekijk alle artikelen
+                    </Link>
+                )}
             </div>
         </div>
     );

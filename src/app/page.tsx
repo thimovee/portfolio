@@ -28,15 +28,13 @@ export default function Home() {
           </h1>
         </AnimateOnView>
         <AnimateOnView delay={0.20}>
-          <p className="text-secondary max-w-[900px] text-base  font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <p className="text-secondary max-w-[900px] text-base font-medium"> Mijn naam is Thimo van Ewijk, een enthousiaste Fullstack Developer in opleiding aan de HAN. Ik ben gepassioneerd door UI/UX en webontwikkeling, waarbij ik mijn vaardigheden graag toepas in projecten die zowel functioneel als gebruiksvriendelijk zijn. Op deze site deel ik mijn portfolio met projecten en blogposts. Neem gerust contact met me op voor meer informatie of bekijk mijn werk hieronder! </p>
         </AnimateOnView>
-        <AnimateOnView delay={0.30} className="flex gap-4 items-center">
-          <Link className="bg-purple block text-center w-full medium:w-fit medium:mx-auto  font-medium text-base tracking-tight leading-none py-3 px-5 rounded-lg" href="/contact">
+        <AnimateOnView delay={0.30} className="px-8 md:px-4 lg:px-0 justify-center w-full flex gap-4 items-center">
+          <Link className="bg-purple block max-w-[260px] text-center w-full   font-medium text-base tracking-tight leading-none py-3 px-5 rounded-lg" href="/contact">
             Contacteer mij
           </Link>
-          <Link className="border  border-border block text-center w-full medium:w-fit medium:mx-auto  font-medium text-base tracking-tight leading-none py-3 px-5 rounded-lg" href="/portfolio">
+          <Link className="border  border-border max-w-[260px]  text-center w-full h-10  font-medium text-base tracking-tight flex items-center justify-center rounded-lg" href="/portfolio">
             Bekijk mijn werk
           </Link>
         </AnimateOnView>

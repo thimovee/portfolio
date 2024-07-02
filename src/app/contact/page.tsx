@@ -22,9 +22,7 @@ const Page = () => {
                             <br /><a href='mailto:thimove@gmail.com' className="text-white hover:text-secondary_purple duration-500 ease-linear"> thimove@gmail.com</a>
                         </p>
                     </AnimateOnView>
-                    <AnimateOnView delay={0.20}>
-                        <ContactForm />
-                    </AnimateOnView>
+                    <ContactForm />
                 </div>
             </div>
         </div>

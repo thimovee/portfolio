@@ -56,6 +56,13 @@ const MobileNav = () => {
                                     </li>
                                 </AnimateOnView>
                             </Link>
+                            <Link onClick={() => setIsOpen(false)} href="/contact">
+                                <AnimateOnView delay={0.50}>
+                                    <li className={cn('font-semibold border-b pb-6', pathname === '/contact' ? 'text-white border-white' : "text-neutral-400 border-neutral-700")}>
+                                        Contact
+                                    </li>
+                                </AnimateOnView>
+                            </Link>
                         </ul>
                     </div>
                 </div>

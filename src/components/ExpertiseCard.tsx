@@ -15,14 +15,11 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({ expertise, order, targetScale, 
 
     const container = useRef(null);
     const scale = useTransform(progress, range, [1, targetScale]);
-    const randomHex = () => {
-        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
 
     return (
-        <div ref={container} className="h-fit max-h-[220px] mt-8 first:mt-0 flex items-center justify-center sticky top-[100px]">
+        <div ref={container} className="bg-gradient-to-tr  bg-black from-purple/10 via-transparent to-black rounded-xl border border-neutral-900 h-fit max-h-[220px] mt-8 first:mt-0 flex items-center justify-center sticky top-[100px]">
             <motion.div
-                style={{ backgroundColor: randomHex(), scale, top: `calc(${order * 0}px)` }}
+                style={{ scale, top: `calc(${order * 0}px)` }}
                 className="flex gap-8 p-7.5 duration-300 relative -top-3/4 w-[660px] h-[220px] rounded-[20px]"
             >
                 <span>0{order + 1}</span>

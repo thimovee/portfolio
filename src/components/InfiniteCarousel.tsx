@@ -16,7 +16,6 @@ interface InfiniteCarouselProps {
 
 const InfiniteCarousel: FC<InfiniteCarouselProps> = ({ icons, hasBackground, delay }) => {
     const fastSpeed = 50;
-    const slowSpeed = 100;
 
     const [duration, setDuration] = useState(fastSpeed);
     const [ref, inView] = useInView();

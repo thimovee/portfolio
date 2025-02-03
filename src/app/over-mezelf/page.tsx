@@ -7,7 +7,7 @@ import Services from '@/components/Services';
 
 const page: FC = () => {
     return (
-        <div className='py-[38px] medium:py-[76px] large:pb-10 px-5 medium:px-7.5 large:px-[60px] xlarge:px-0 xlarge:max-w-8xl xlarge:mx-auto w-full mx-auto large:mx-0 flex justify-center'>
+        <div className='py-[38px] medium:py-[76px] large:pb-10 px-5 medium:px-7.5 large:px-[60px] xlarge:px-0 xlarge:max-w-7xl xlarge:mx-auto w-full mx-auto large:mx-0 flex justify-center'>
             <div className='w-full tracking-tight flex flex-col text-left medium:text-center  xlarge:w-full'>
                 <AnimatedWhenVisible>
                     <h1 className='mx-auto text-center tracking-[-2px] text-[32px] medium:text-5xl large:text-6.5xl large:leading-[74px] max-w-[800px] font-semibold'>Over mezelf</h1>
@@ -73,22 +73,16 @@ const page: FC = () => {
                     </div>
                 </AnimatedWhenVisible>
                 <Education />
-                <Services />
                 <div className='relative  pt-24 flex flex-col gap-12 large:gap-14'>
                     <AnimatedWhenVisible>
                         <h5 className='text-[32px] leading-[42px] tracking-[-1.5px] medium:text-[38px] medium:leading-[48px] large:text-5xl large:leading-[58px] text-left font-semibold'>Technologieën</h5>
                         <p className='text-left my-8 text-secondary text-base '>
                             In de loop van mijn studie en persoonlijke projecten heb ik een breed scala aan technologieën en programmeertalen geleerd en toegepast. Mijn focus ligt voornamelijk op het ontwikkelen van webapplicaties, waar ik zowel frontend als backend vaardigheden heb kunnen ontwikkelen. Hier is een overzicht van de technologieën waar ik mee heb gewerkt:
                         </p>
-                        <div className='flex flex-wrap gap-2'>
-                            {icons.map((icon, index) => (
-                                <AnimatedWhenVisible delay={index * 0.05} key={index} className='px-3 py-1.5 rounded-md bg-[#101010] flex gap-1 items-center'>
-                                    <div className='h-10  bg-[#101010]' style={{ display: 'inline-flex', alignItems: 'center' }}>
-                                        {React.cloneElement(icon.icon, { style: { width: '20px', height: '20px' } })}
-                                    </div>
-                                    <span className='font-semibold capitalize text-sm'>{icon.name}</span>
-                                </AnimatedWhenVisible>
-                            ))}
+                        <div className='grid grid-cols-3 gap-10'>
+                            <div>a</div>
+                            <div>b</div>
+                            <div>c</div>
                         </div>
                     </AnimatedWhenVisible>
                 </div>
